@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class GuessNumberApp {
-	    
+    
     public static void main(String[] args) {
         final int LIMIT = 10;
 
@@ -16,27 +16,25 @@ public class GuessNumberApp {
 
         @SuppressWarnings("resource")
         Scanner sc = new Scanner(System.in);            
-        int count = 1;
-        while (true) {
+        int count = 0;
+        int guess = 0;
+        while (guess != number) {
             System.out.print("Your guess: ");
-            int guess = sc.nextInt();
+            guess = sc.nextInt();
             
             if (guess < 1 || guess > LIMIT) {
                 System.out.println("Invalid guess. Try again.");
-                continue;
-            }
-            
-            if (guess < number) {
+                count--;
+            } else if (guess < number) {
                 System.out.println("Too low.");
             } else if (guess > number) {
                 System.out.println("Too high.");
-            } else {
-                System.out.println("You guessed it in " + 
-                                   count + " tries.\n");
-                break;
-            }            
+            }
+            
             count++;
         }
+        System.out.println("You guessed it in " + 
+                                   count + " tries.\n");
         System.out.println("Bye!");
     }   
 }
