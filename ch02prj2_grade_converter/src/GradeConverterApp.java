@@ -34,6 +34,7 @@ public class GradeConverterApp {
 		// display output
 		
 		System.out.println("Bye");
+		sc.close();
 
 	}
 

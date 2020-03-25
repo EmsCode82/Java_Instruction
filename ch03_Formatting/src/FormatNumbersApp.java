@@ -3,7 +3,7 @@ import java.text.NumberFormat;
 public class FormatNumbersApp {
 
 	public static void main(String[] args) {
-		double carPrice = 35000.00;
+		double carPrice = 35000.857;
 		
 		System.out.println("Car price is: "+carPrice);
 		//format as a currency
