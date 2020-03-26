@@ -24,5 +24,6 @@ public class ControlYourCodeApp {
 			choice = sc.next();
 		}
 		System.out.println("Bye!");
+		sc.close();
 	}
 }

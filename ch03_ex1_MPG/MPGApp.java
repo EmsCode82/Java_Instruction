@@ -1,4 +1,5 @@
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.text.NumberFormat;
 import java.util.Scanner;
 
@@ -14,12 +15,12 @@ public class MPGApp {
 		String choice = "y";
 		while (choice.equalsIgnoreCase("y")) {
 			System.out.print("Enter miles driven: ");
-			double miles = sc.nextDouble();
-			BigDecimal mile = new BigDecimal(sc.next());
+			String milesStr = sc.next();
+			BigDecimal miles = new BigDecimal(milesStr);
 
 			System.out.print("Enter gallons of gas used: ");
-			double gallons = sc.nextDouble();
-			BigDecimal gallon = new BigDecimal(sc.next());
+			
+			BigDecimal gallons = sc.nextBigDecimal();
 
 			double mpg = miles / gallons;
 			mpg = (int) Math.round(mpg);

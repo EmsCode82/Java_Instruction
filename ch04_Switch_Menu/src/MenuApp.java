@@ -54,7 +54,7 @@ public class MenuApp {
 			
 			
 		System.out.println("Goodbye");
-
+        sc.close();
 	}
 
 }
