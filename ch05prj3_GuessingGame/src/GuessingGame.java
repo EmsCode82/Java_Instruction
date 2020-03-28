@@ -7,7 +7,6 @@ public class GuessingGame {
 		System.out.println("Welcome to the Guess the Number game!");
 		Scanner sc = new Scanner(System.in);
 		String choice = "y";
-
 		while (choice.equals("y")) {
 
 			// - loop 1 - game
@@ -31,9 +30,9 @@ public class GuessingGame {
 				} else if (diff < 0) {
 					msg = "Too low!!";
 				} else if (diff > 10) {
-					msg = "Too high!!";
+					msg = "Way too high!!";
 				} else if (diff > 0) {
-					msg = "Way too High!!";
+					msg = "Too High!!";
 				} else {
 					// user guessed it!
 					break; /* while( guess != rndNbr ) */
