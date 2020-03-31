@@ -2,7 +2,7 @@
 public class Main {
 //make the main class
 	public static void main(String[] args) {
-//name object-->
+//name object-->{
 		Class1 e = new Class1();//Create objects e and d from Class1 blueprint Class1();
 		Class2 d = new Class2();//<--Parenthesis makes Constructor(Makes the Object)
 		Class1 f = new Class1();//Can be multiple objects such as e,d,f in one Class
@@ -12,6 +12,6 @@ public class Main {
 		e.printHi();
 	}//make the object. Objects are made from the Classes. Can Have multiple Classes and
 	//multiple objects.
-
-	
 }
+	
+
