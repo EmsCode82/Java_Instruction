@@ -38,14 +38,13 @@ public class LineItem {
 
 	@Override
     public boolean equals(Object object) {
-        if (object instanceof Product)  {
-            LineItem lineitem2 = (LineItem) object;
-            if (product.equals(lineitem2.getProduct()) &&
-                quantity ==lineitem2.getQuantity())
-            {
+        if (object instanceof LineItem)  {
+            LineItem li = (LineItem) object;
+            if (product.equals(li.getProduct()) &&
+                quantity == li.getQuantity())
                     return true;
             }
-        }
+        
         return false;
     }
 }
