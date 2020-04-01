@@ -1,6 +1,6 @@
 import java.text.NumberFormat;
 
-public class Product implements Printable {
+public class Product implements Printable, Cloneable {
     // 1) Define some instance variables
 	private String code;
 	private String description;
@@ -67,6 +67,12 @@ public class Product implements Printable {
 	@Override
 	public void print() {
 		System.out.println(description + "|" + getPriceFormatted());
+	}
+
+	@Override
+	protected Object clone() throws CloneNotSupportedException {
+		// TODO Auto-generated method stub
+		return super.clone();
 	}
 	
 	
