@@ -1,6 +1,7 @@
+package util;
 import java.util.Scanner;
 
-public class EConsole {
+public class Console {
     
     private static Scanner sc = new Scanner(System.in);
 
