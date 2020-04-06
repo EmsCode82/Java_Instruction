@@ -1,10 +1,87 @@
 package ui;
 
-public class BootcampMovieDatabaseApp {
+	import java.util.Arrays;
 
-	public static void main(String[] args) {
+	import business.Movie;
+
+	public class BootcampMovieDatabaseApp {
+
+		public static void main(String[] args) {
+			int[] numbers = {11,67,222,4,76};
+			
+			// order / sort, modify / add, search, copy
+			// search
+			int idx = Arrays.binarySearch(numbers, 222);
+			System.out.println("idx of 222 = "+idx);
+			
+			System.out.println("All elements of the array:");
+			for (int n: numbers) {
+				System.out.println(n);
+			}
+			System.out.println("sort 'em!!!");
+			Arrays.sort(numbers);
+			for (int n: numbers) {
+				System.out.println(n);
+			}
+			
+			System.out.println("=== let's sort some strings ====");
+			String[] students = {"Marcus", "Jeff", "Tyler", "Sarah", "Sam", "Christian"};
+			for (String s: students) {
+				System.out.println(s);
+			}
+			System.out.println("Sort 'em");
+			Arrays.sort(students);
+			for (String s: students) {
+				System.out.println(s);
+			}
+			
+			System.out.println("=== sort some products ===");
+			Movie p1 = new Movie("java", "Murach's Java", 55.55);
+			Movie p2 = new Movie("andr", "Murach's Android", 65.55);
+			Movie p3 = new Movie("mysql", "Murach's MySQL", 39.99);
+			Movie p4 = new Movie("html", "Murach's HTML", 45.99);
 		
+			Movie[] products = {p1,p2,p3,p4};
+			for (Movie p: products) {
+				System.out.println(p);
+			}
+			
+			System.out.println("=== sort 'em ===");
+			Arrays.sort(products);
+			for (Movie p: products) {
+				System.out.println(p);
+			}
 
+			System.out.println("=== rectangular array ===");
+			int[][] table = new int[3][2];  // 3 x 2 array, 3 rows, 2 cols
+			table[0][0] = 1;  // row 0, col 0
+			table[0][1] = 2;  // row 0, col 0
+			table[1][0] = 3;  // row 0, col 0
+			table[1][1] = 4;  // row 0, col 0
+			table[2][0] = 5;  // row 0, col 0
+			table[2][1] = 6;  // row 0, col 0
+			
+			// iterate through rows
+			for (int i = 0; i < table.length; i++) {
+				// iterate through cols
+				for (int j = 0; j < table[i].length; j++) {
+					System.out.print(table[i][j]+ " ");
+				}
+				System.out.print("\n");
+			}
+			
+		}
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 	}
-
-}
