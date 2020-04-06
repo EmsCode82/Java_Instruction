@@ -18,6 +18,8 @@ public class ZombieKiller {
 		System.out.println(zombies[1]);
 		System.out.println(zombies[2]);
 		
+		int number [] = {1,2,4,5};
+		System.out.print(number.length);
 		
 
 	}
