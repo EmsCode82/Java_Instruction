@@ -36,26 +36,39 @@ public class Adventure {
 				String choice2 = "";
 				choice2 = sc.next();
 				if (choice2.equals("1")) {
-					System.out.println("You are immediately mauled by a ravenous zombie");
-					if (choice2.equals("2")) {
-						System.out.println("You wait for the dusk to settle. When it does you pear out of your hole and see a horde"
-								+ "of infected people. They all turn to look at you");
-						if (choice2.equals("3")) {
-							System.out.println("You're not taking any chances out there. You choose to go down the sewer pipe.");
-						}
+					System.out.println("You step out into the bright cloud in front of you. You hear strange growling noises"
+							+ " from all sides and you sense that you are not alone. \nAs the dust settles to the ground it becomes"
+							+ " more apparent that you are not. You start to see a figure emmerge from the dust...it is the \nform"
+							+ " of a human but something is very wrong. It appears to be a person but their flesh is ravaged"
+							+ " with wounds and their eyes are blackend \nand void of the appearance of sanity. You try wrapping"
+							+ " your mind around what you are seeing and begin to think of things the way they were \nbefore all of"
+							+ " destruction.... before you have a chance to react at all you are mauled by ravenous zombies and eaten"
+							+ " while you still live... \ndarkness circles your mind and you slip out of consiousness, the last thing you"
+							+ " see is a disfigured face eating your intestines.\n======================================================"
+							+ "=====================================================================================");
 					}
+				if (choice2.equals("2")) {
+					System.out.println("You wait for the dusk to settle. When it does you peer out of your hole and see a horde"
+					+ " of infected people. They all turn to look at you. \nSince the dust has settled you can now see what is on"
+					+ " the ground beneath you. A weathered 12 gauge shotgun sits at your feet. Just as you \nsee it an Angry Zombie"
+					+ " begins rushing toward you. You reach down, pick up the shotgun and blow the disgruntled, rabid monsters,"
+					+ "face off its neck.");
 				}
-     	   case "2": 
+				if (choice2.equals("3")) {
+					System.out.println("You're not taking any chances out there. You choose to go down the sewer pipe.");
+						}
+     	   case "2":
+     		  if (choice1.equals("2"))
      		   System.out.println(
 					"==================================================================================================================="
 							+ "========================\n"
 							+ "You begin to squeeze yourself down into the Drainage Pipe. Reaching your feet down into"
 							+ " the darkness you fish for some solid footing \nunderneath but find none. The surface of"
 							+ " the Pipe is slick and it causes you to begin to slide as you reach deeper into the darkness"
-							+ " for a \nfoothold.\n======================================================="
+							+ " for a \nfoothold. It really stinks down here but I appear to be safe for the time being\n======================================================="
 							+ "====================================================================================");
                    if (choice1.equals("2")) {
-                	   System.out.println("it really stinks down here");
+                	   System.out.println("text line");
                    }
 			}
 		}
