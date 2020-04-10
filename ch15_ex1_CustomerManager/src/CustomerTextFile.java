@@ -18,41 +18,42 @@ public final class CustomerTextFile implements DAO<Customer> {
 	}
 
 	@Override
-    public List<Customer> getAll() {
-        // if the customers file has already been read, don't read it again
-        if (customers != null) {
-            return customers;
-        }
+	public List<Customer> getAll() {
+		// if the customers file has already been read, don't read it again
+		if (customers != null) {
+			return customers;
+		}
 
-        // load the array list with Customer objects created from
-        // the data in the file
-        customers = new ArrayList<>();
-        
-        if(Files.exists(customersPath)) { // Prevent file not found exception
-        try (BufferedReader in = new BufferedReader(
-        		                 new FileReader(customersFile))) {
-        	// read all customers stored in the file
-        	// into the array list
-        	String line = in.readLine();
-        	while (line != null) {
-        		String[] columns = line.split(FIELD_SEP);
-        		String firstName = columns[0];
-        		String lastName = columns[1];
-        		String email = columns[2];
-        		
-        		Customer c = new Customer(firstName, lastName, email);
-        		
-        		customers.add(c);
-        		line = in.readLine();
-        	 catch (IOException e) {
-        		System.out.println(e);
-        		return null;
-        	}
-        } else { System.out.println(productsPath.toAbsolutePath() + "doesn't exist.");
-        return null;
-        }
-        return customers;
-    }
+		// load the array list with Customer objects created from
+		// the data in the file
+		customers = new ArrayList<>();
+
+		if (Files.exists(customersPath)) { // Prevent file not found exception
+			try (BufferedReader in = new BufferedReader(new FileReader(customersFile))) {
+				// read all customers stored in the file
+				// into the array list
+				String line = in.readLine();
+				while (line != null) {
+					String[] columns = line.split(FIELD_SEP);
+					String firstName = columns[0];
+					String lastName = columns[1];
+					String email = columns[2];
+
+					Customer c = new Customer(firstName, lastName, email);
+
+					customers.add(c);
+					line = in.readLine();
+				}
+			} catch (IOException e) {
+				System.out.println(e);
+				return null;
+			}
+		} else {
+			System.out.println(customersPath.toAbsolutePath() + "doesn't exist.");
+			return null;
+		}
+		return customers;
+	}
 
 	@Override
 	public Customer get(String email) {
