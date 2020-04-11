@@ -61,13 +61,11 @@ public class PetStoreApp {
 		String species = Console.getString("Enter Species: ");
 		String name = Console.getString("Enter name: ");
 		int age = Console.getInt("Enter age: ");
-
-		Pet pet = new Pet();
+        Pet pet = new Pet();
 		pet.setType(type);
 		pet.setSpecies(species);
 		pet.setName(name);
 		pet.setAge(age);
-
 		System.out.println();
 		System.out.println(type + " " + name + " " + species + " has been added.\n");
 	}
