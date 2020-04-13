@@ -8,7 +8,7 @@ public class Vendor {
     private String city;
     private String state;
     private int zip;
-    private String phonenumber;
+    private String phoneNumber;
     private String email;
 	public Vendor() {
 		super();
@@ -23,7 +23,7 @@ public class Vendor {
 		this.city = city;
 		this.state = state;
 		this.zip = zip;
-		this.phonenumber = phonenumber;
+		this.phoneNumber = phonenumber;
 		this.email = email;
 	}
 	public int getId() {
@@ -69,10 +69,10 @@ public class Vendor {
 		this.zip = zip;
 	}
 	public String getPhonenumber() {
-		return phonenumber;
+		return phoneNumber;
 	}
 	public void setPhonenumber(String phonenumber) {
-		this.phonenumber = phonenumber;
+		this.phoneNumber = phonenumber;
 	}
 	public String getEmail() {
 		return email;
@@ -83,7 +83,7 @@ public class Vendor {
 	@Override
 	public String toString() {
 		return "Vendor [id=" + id + ", code=" + code + ", name=" + name + ", address=" + address + ", city=" + city
-				+ ", state=" + state + ", zip=" + zip + ", phonenumber=" + phonenumber + ", email=" + email + "]";
+				+ ", state=" + state + ", zip=" + zip + ", phonenumber=" + phoneNumber + ", email=" + email + "]";
 	}
     
 }

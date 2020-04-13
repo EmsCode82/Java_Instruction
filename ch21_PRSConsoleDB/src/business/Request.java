@@ -2,15 +2,15 @@ package business;
 
 public class Request {
     private int  id;
-    private String userid;
+    private String userId;
     private String description;
     private String justification;
-    private String dateneeded;
-    private String deliverymode;
+    private String dateNeeded;
+    private String deliveryMode;
     private String status;
     private int total;
-    private String datesubmitted;
-    private String reasonforrejection;
+    private String dateSubmitted;
+    private String reasonForRejection;
 	public Request() {
 		super();
 	}
@@ -18,15 +18,15 @@ public class Request {
 			String deliverymode, String status, int total, String datesubmitted, String reasonforrejection) {
 		super();
 		this.id = id;
-		this.userid = userid;
+		this.userId = userid;
 		this.description = description;
 		this.justification = justification;
-		this.dateneeded = dateneeded;
-		this.deliverymode = deliverymode;
+		this.dateNeeded = dateneeded;
+		this.deliveryMode = deliverymode;
 		this.status = status;
 		this.total = total;
-		this.datesubmitted = datesubmitted;
-		this.reasonforrejection = reasonforrejection;
+		this.dateSubmitted = datesubmitted;
+		this.reasonForRejection = reasonforrejection;
 	}
 	public int getId() {
 		return id;
@@ -35,10 +35,10 @@ public class Request {
 		this.id = id;
 	}
 	public String getUserid() {
-		return userid;
+		return userId;
 	}
 	public void setUserid(String userid) {
-		this.userid = userid;
+		this.userId = userid;
 	}
 	public String getDescription() {
 		return description;
@@ -53,16 +53,16 @@ public class Request {
 		this.justification = justification;
 	}
 	public String getDateneeded() {
-		return dateneeded;
+		return dateNeeded;
 	}
 	public void setDateneeded(String dateneeded) {
-		this.dateneeded = dateneeded;
+		this.dateNeeded = dateneeded;
 	}
 	public String getDeliverymode() {
-		return deliverymode;
+		return deliveryMode;
 	}
 	public void setDeliverymode(String deliverymode) {
-		this.deliverymode = deliverymode;
+		this.deliveryMode = deliverymode;
 	}
 	public String getStatus() {
 		return status;
@@ -77,22 +77,22 @@ public class Request {
 		this.total = total;
 	}
 	public String getDatesubmitted() {
-		return datesubmitted;
+		return dateSubmitted;
 	}
 	public void setDatesubmitted(String datesubmitted) {
-		this.datesubmitted = datesubmitted;
+		this.dateSubmitted = datesubmitted;
 	}
 	public String getReasonforrejection() {
-		return reasonforrejection;
+		return reasonForRejection;
 	}
 	public void setReasonforrejection(String reasonforrejection) {
-		this.reasonforrejection = reasonforrejection;
+		this.reasonForRejection = reasonforrejection;
 	}
 	@Override
 	public String toString() {
-		return "Request [id=" + id + ", userid=" + userid + ", description=" + description + ", justification="
-				+ justification + ", dateneeded=" + dateneeded + ", deliverymode=" + deliverymode + ", status=" + status
-				+ ", total=" + total + ", datesubmitted=" + datesubmitted + ", reasonforrejection=" + reasonforrejection
+		return "Request [id=" + id + ", userid=" + userId + ", description=" + description + ", justification="
+				+ justification + ", dateneeded=" + dateNeeded + ", deliverymode=" + deliveryMode + ", status=" + status
+				+ ", total=" + total + ", datesubmitted=" + dateSubmitted + ", reasonforrejection=" + reasonForRejection
 				+ "]";
 	}
     
