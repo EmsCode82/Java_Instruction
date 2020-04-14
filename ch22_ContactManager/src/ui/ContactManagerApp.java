@@ -21,6 +21,7 @@ public class ContactManagerApp {
 		displayContacts(contacts);
 		System.out.println("List of Contacts missing phone #'s ");
 		List<Contact> contactsNoPhone = filterContactsWithoutPhone(contacts);
+		displayContacts(contactsNoPhone);
 
 		System.out.println("List of Contacts missing phone #'s - Lambda");
 		List<Contact> contactsNoPhone2 = filterContacts(contacts, c -> c.getPhone() == null);
