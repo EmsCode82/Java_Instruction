@@ -2,76 +2,74 @@ package business;
 
 public class Pet {
 
-	    private int ID;
-	    private String Type;
-	    private String Species;
-	    private String Name;
-	    private int Age;
+	    private int iD;
+	    private String type;
+	    private String species;
+	    private String name;
+	    private int age;
 		
 	    public Pet() {
-	    	ID = 0;
-	    	Type = "";
-	    	Species = "";
-	    	Name = "";
-	    	Age = 0;
+	    	iD = 0;
+	    	type = "";
+	    	species = "";
+	    	name = "";
+	    	age = 0;
 			
 	    }
 
 		public Pet(int iD, String type, String species, String name, int age) {
 			super();
-			this.ID = iD;
-			this.Type = type;
-			this.Species = species;
-			this.Name = name;
-			this.Age = age;
+			this.iD = iD;
+			this.type = type;
+			this.species = species;
+			this.name = name;
+			this.age = age;
 		}
 
-		public int getID() {
-			return ID;
+		public int getiD() {
+			return iD;
 		}
 
-		public void setID(int iD) {
-			ID = iD;
+		public void setiD(int iD) {
+			this.iD = iD;
 		}
 
 		public String getType() {
-			return Type;
+			return type;
 		}
 
 		public void setType(String type) {
-			Type = type;
+			this.type = type;
 		}
 
 		public String getSpecies() {
-			return Species;
+			return species;
 		}
 
 		public void setSpecies(String species) {
-			Species = species;
+			this.species = species;
 		}
 
 		public String getName() {
-			return Name;
+			return name;
 		}
 
 		public void setName(String name) {
-			Name = name;
+			this.name = name;
 		}
 
 		public int getAge() {
-			return Age;
+			return age;
 		}
 
 		public void setAge(int age) {
-			Age = age;
+			this.age = age;
 		}
 
 		@Override
 		public String toString() {
-			return "Pet [ID=" + ID + ", Type=" + Type + ", Species=" + Species + ", Name=" + Name + ", Age=" + Age
+			return "Pet [iD=" + iD + ", type=" + type + ", species=" + species + ", name=" + name + ", age=" + age
 					+ "]";
 		}
-	    
 }
-
-	    
+			    

@@ -59,7 +59,7 @@ public class PetStoreApp {
 		String name = Console.getString("Enter name: ");
 		int age = Console.getInt("Enter age: ");
 		Pet pet = new Pet();
-		pet.setID(id);
+		pet.setiD(id);
 		pet.setType(type);
 		pet.setSpecies(species);
 		pet.setName(name);
@@ -75,7 +75,7 @@ public class PetStoreApp {
 		int id = Console.getInt("Enter the ID you wish to adopt:  ");
 		Pet setToDelete = null;
 		for (Pet p : pets) {
-			if (p.getID() == id) {
+			if (p.getiD() == id) {
 				setToDelete = p;
 				break;
 			}
